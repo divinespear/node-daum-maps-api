@@ -18,7 +18,11 @@
     "daum",
     "api",
     "map",
-    "postcode"
+    "postcode",
+    "카카오",
+    "다음",
+    "지도",
+    "우편번호"
   ],
   "author": {
     "name": "Sinyoung \"Divinespear\" Kang",
