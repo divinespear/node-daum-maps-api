@@ -17,7 +17,7 @@ export class DaumPostcode implements DaumLibraryLoader {
     return lib !== undefined && typeof lib === 'function';
   }
 
-  async loadlib() {
+  public async loadlib() {
     // 로더 로드
     if (!this.hasLoader) {
       await loadScriptOnce('https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false');
