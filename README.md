@@ -15,3 +15,68 @@ Promise를 지원하는 node.js용 다음 지도 및 우편번호 서비스 구�
 ```bash
 npm i load-script-once daum-maps-api
 ```
+
+## 사용하기
+
+### 우편번호 서비스
+
+Promise로 선택 결과가 넘어옵니다.
+
+```typescript
+import { DaumPostcode } from 'daum-maps-api'
+
+const postcode = new DaumPostcode();
+
+postcode.open().then((data) => {
+  if (data) {
+    ...
+  }
+});
+```
+
+`async`/`await`를 사용할 수 있습니다.
+
+```typescript
+import { DaumPostcode } from 'daum-maps-api'
+
+const postcode = new DaumPostcode();
+
+async function test() {
+  const data = await postcode.open();
+  if (data) {
+    ...
+  }
+}
+```
+
+#### `new DaumPostcode(options)`
+
+[http://postcode.map.daum.net/guide#attributes](http://postcode.map.daum.net/guide#attributes)를 참고해주세요.
+
+* `oncomplete`, `onclose` 제외
+
+```typescript
+const postcode = new DaumPostcode({
+  ...
+});
+```
+
+#### `DaumPostcode#open(options)`
+
+[http://postcode.map.daum.net/guide#methods](http://postcode.map.daum.net/guide#methods)의 `open` 함수를 참고해주세요.
+
+```typescript
+postcode.open({
+  ...
+});
+```
+
+#### `DaumPostcode#embed(container, options)`
+
+[http://postcode.map.daum.net/guide#methods](http://postcode.map.daum.net/guide#methods)의 `embed` 함수를 참고해주세요.
+
+```typescript
+postcode.embed(container, {
+  ...
+});
+```
