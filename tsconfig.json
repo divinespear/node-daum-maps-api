@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "strict": true,
+    "declaration": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "paths": {
+      "load-script-once": [
+        "typings/load-script-once"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

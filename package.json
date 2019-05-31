@@ -1,0 +1,52 @@
+{
+  "name": "node-daum-maps-api",
+  "version": "1.0.0",
+  "description": "node.js용 카카오 다음 지도 API",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divinespear/node-daum-maps-api.git"
+  },
+  "keywords": [
+    "kakao",
+    "daum",
+    "api",
+    "map",
+    "postcode"
+  ],
+  "author": {
+    "name": "Sinyoung \"Divinespear\" Kang",
+    "email": "divinespear@gmail.com",
+    "url": "https://github.com/divinespear"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/divinespear/node-daum-maps-api/issues"
+  },
+  "homepage": "https://github.com/divinespear/node-daum-maps-api#readme",
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "load-script-once": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.12.5",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-copy": "^2.0.1",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "tslib": "^1.9.3",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  }
+}
