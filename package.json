@@ -1,6 +1,6 @@
 {
-  "name": "node-daum-maps-api",
-  "version": "1.0.0",
+  "name": "daum-maps-api",
+  "version": "0.1.0",
   "description": "node.js용 카카오 다음 지도 API",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
